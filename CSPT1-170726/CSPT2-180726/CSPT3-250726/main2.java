@@ -1,25 +1,27 @@
-class Person {
-    String name = "Rahul";
-    int age = 20;
-
-    void displayPerson() {
-        System.out.println("Name : " + name);
-        System.out.println("Age  : " + age);
-    }
+import java.util.Scanner;
+class person{
+    String name;
+    int age;
 }
+class Employee extends person{
+    int employeeId;
+    double salary;
+}
+class Manger eextends emploee 
 
-class Student extends Person {
-    int rollNo = 101;
-    String course = "BCA";
-
-    void displayStudent() {
-        displayPerson();
-        System.out.println("Roll No : " + rollNo);
-        System.out.println("Course  : " + course);
-    }
-
-    public static void main(String[] args) {
-        Student s = new Student();
-        s.displayStudent();
-    }
+string department;
+double bonus;
+void dispalyDetails()
+{
+    System.out.println("\nManager Details");
+    System.out.println("Name: " + name);
+    System.out.println("Age: " + age);
+    System.out.println("Employee ID: " + 
+]-0p-employeeid);
+    System.out.println("Department: " + department);
+    System.out.println("Basic Salary: " + salary);
+    System.out.println("Bonus: " + bonus);
+    System.out.println("Total salary: " + (salary + bonus));
+    
+    
 }
