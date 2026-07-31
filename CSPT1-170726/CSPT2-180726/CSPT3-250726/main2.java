@@ -1,27 +1,48 @@
 import java.util.Scanner;
-class person{
+
+class Person {
     String name;
     int age;
-}
-class Employee extends person{
-    int employeeId;
-    double salary;
-}
-class Manger eextends emploee 
 
-string department;
-double bonus;
-void dispalyDetails()
-{
-    System.out.println("\nManager Details");
-    System.out.println("Name: " + name);
-    System.out.println("Age: " + age);
-    System.out.println("Employee ID: " + 
-]-0p-employeeid);
-    System.out.println("Department: " + department);
-    System.out.println("Basic Salary: " + salary);
-    System.out.println("Bonus: " + bonus);
-    System.out.println("Total salary: " + (salary + bonus));
     
+}
+
+class Student extends Person {
+    int rollNo;
+    String course;
+
+    void displayDetails() {
+        System.out.println("\n------Students Details-------");
+
+        System.out.println(" Name: "+ name);
+        System.out.println("Age: "+age);
+
+        System.out.println("Roll Number: "+rollNo);
+
+        System.out.println("Course:"+course);
+        
+    }
+
     
+}
+class Main2{
+
+    public static void main(String[] args) {
+        Student s = new Student();
+        String name;
+        int age;
+        int rollNo;
+        String course;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Name: ");
+        name = sc.nextLine();
+        System.out.print("Enter Age: ");
+        age = sc.nextInt();
+        System.out.print("Enter Roll No: ");
+        rollNo = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter Course: ");
+        course = sc.nextLine();
+        s.displayDetails();
+    }
 }
