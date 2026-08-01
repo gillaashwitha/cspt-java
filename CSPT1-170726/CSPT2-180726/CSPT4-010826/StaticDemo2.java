@@ -1,4 +1,7 @@
-static{
+class StaticDemo2
+{
+    static
+{
     IO.println("this is static block");
 }
 public static void main (String args[]){
@@ -6,4 +9,5 @@ public static void main (String args[]){
 }
 void main(){
     IO.println("Instance Main Method");
+}
 }
