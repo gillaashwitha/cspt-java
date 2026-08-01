@@ -10,4 +10,11 @@ public static void main (String args[]){
 void main(){
     IO.println("Instance Main Method");
 }
+void main2(){{
+    IO.println("Instance Main Method");
+}
+public dtatic void main(string args){
+    main1();
+    main2();
+}
 }
